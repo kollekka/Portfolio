@@ -1,0 +1,47 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: npm run build
+      - name: Upload Pages artifact
+        # Używamy specjalnej akcji dla Pages; jeśli w innych workflow masz actions/upload-artifact@v3,
+        # zamień ją na actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/configure-pages@v3
+      - uses: actions/deploy-pages@v1
+
+# Jeśli chcesz automatycznie wyszukać i zamienić wszystkie wystąpienia 'actions/upload-artifact@v3',
+# uruchom poniższe polecenie PowerShell (Windows). Po zmianie zacommituj i wypchnij.
+# PowerShell:
+# Get-ChildItem -Path .github -Recurse -Filter *.yml | ForEach-Object { (Get-Content $_) -replace 'actions/upload-artifact@v3','actions/upload-artifact@v4' | Set-Content $_ }
+# Git:
+# git add .github/workflows
+# git commit -m "Upgrade actions/upload-artifact to v4"
+# git push origin main
