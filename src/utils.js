@@ -6,8 +6,8 @@ export function iconUrlFor(name) {
   // Common tech stack icons (prefer accurate brand icons)
   if (n.includes('java')) return 'https://cdn-icons-png.flaticon.com/512/5968/5968282.png'
   // Prefer Spring Boot hexagon icon for 'spring boot', otherwise generic Spring leaf
-  if (n.includes('spring boot')) return 'https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/spring-boot.svg'
-  if (n.includes('spring')) return 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg'
+  // Use the same leaf icon for Spring Boot and Spring (matches Spring Data leaf)
+  if (n.includes('spring boot') || n.includes('spring')) return 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg'
   if (n.includes('react')) return 'https://cdn-icons-png.flaticon.com/512/1126/1126012.png'
   if (n.includes('javascript')) return 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png'
   if (n.includes('html')) return 'https://cdn-icons-png.flaticon.com/512/5968/5968267.png'
