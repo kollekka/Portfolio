@@ -54,12 +54,12 @@ export const certificates = [
     name: 'Umiejętności Jutra — Certificate',
     issuer: 'Umiejętności Jutra',
     link: 'https://szkolenia.umiejetnoscijutra.pl/panel/auth/login',
-    image: '/certyfikat.png',
+    image: 'certyfikat.png',
   },
   {
     name: '[NEW] Spring Boot 3, Spring 6 & Hibernate for Beginners',
     issuer: 'Udemy',
-    image: '/UC-b9d3ab00-a525-4efd-bad2-8c03538bd13c.jpg',
+    image: 'UC-b9d3ab00-a525-4efd-bad2-8c03538bd13c.jpg',
   },
 ]
 

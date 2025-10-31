@@ -1,9 +1,6 @@
-// Utility helpers for skill icons and domain coloring
 
-// Prefer image icons from Flaticon when available
 export function iconUrlFor(name) {
   const n = String(name).toLowerCase()
-  // Common tech stack icons (prefer accurate brand icons)
   if (n.includes('java')) return 'https://cdn-icons-png.flaticon.com/512/5968/5968282.png'
   if (n.includes('spring boot') || n.includes('spring')) return 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg'
   if (n.includes('react')) return 'https://cdn-icons-png.flaticon.com/512/1126/1126012.png'
@@ -54,7 +51,6 @@ export function domainFor(name, categoryHint) {
   if (hint.includes('frontend')) return 'frontend'
   if (hint.includes('database') || hint.includes('bazy')) return 'db'
   if (hint.includes('inne') || hint.includes('other')) return 'other'
-  // Infer by keyword
   if (n.includes('spring') || n.includes('jpa') || n.includes('hibernate') || n.includes('java') || n.includes('junit') || n.includes('php') || n.includes('laravel')) return 'backend'
   if (n.includes('react') || n.includes('javascript') || n.includes('html') || n.includes('css') || n.includes('vite')) return 'frontend'
   if (n.includes('sql') || n.includes('postgres') || n.includes('mongo') || n.includes('database')) return 'db'
