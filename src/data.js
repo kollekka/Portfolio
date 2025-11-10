@@ -11,7 +11,7 @@ export const profile = {
 
 export const links = {
   github: 'https://github.com/kollekka',
-  linkedin: '', // add LinkedIn URL if you want
+  linkedin: '',
   email: 'adrianswieca@gmail.com',
 }
 
@@ -28,6 +28,14 @@ export const projects = [
       'Responsive portfolio built with React + Vite, ready for hosting on GitHub Pages. Sections: About, Skills, Projects, Certificates.',
     tech: ['React', 'Vite', 'CSS'],
     demo: '',
+    repo: '',
+  },
+  {
+    title: 'SubGuard',
+    description:
+      'Full‑stack app for managing subscriptions and warranties. Email reminders are sent for both upcoming renewals and expiring warranties. Tech: React + Vite + TanStack Query + Spring Boot + PostgreSQL. Code is private for now.',
+    tech: ['React', 'Vite', 'TanStack Query', 'Spring Boot', 'PostgreSQL'],
+    demo: 'https://subguard-frontend.vercel.app/',
     repo: '',
   },
   {
