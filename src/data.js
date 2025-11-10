@@ -16,8 +16,8 @@ export const links = {
 }
 
 export const skills = [
-  { category: 'Backend (Java)', items: ['Java 17+', 'Spring Boot', 'Spring Data', 'JPA/Hibernate', 'REST', 'Maven/Gradle', 'PHP', 'Laravel'] },
-  { category: 'Frontend (JS)', items: ['JavaScript (ESNext)', 'React', 'Vite', 'HTML5', 'CSS3'] },
+  { category: 'Backend', items: ['Java 17+', 'Spring Boot', 'Spring Data', 'JPA/Hibernate', 'REST / API', 'Maven/Gradle', 'PHP', 'Laravel', 'Node/Express'] },
+  { category: 'Frontend', items: ['JavaScript (ESNext)', 'React', 'Vite', 'HTML5', 'CSS3'] },
   { category: 'Databases', items: ['SQL', 'PostgreSQL', 'MySQL', 'MongoDB'] },
 ]
 
@@ -28,7 +28,7 @@ export const projects = [
       'Responsive portfolio built with React + Vite, ready for hosting on GitHub Pages. Sections: About, Skills, Projects, Certificates.',
     tech: ['React', 'Vite', 'CSS'],
     demo: '',
-    repo: '',
+    repo: 'https://github.com/kollekka/Portfolio',
   },
   {
     title: 'SubGuard',
@@ -44,7 +44,7 @@ export const projects = [
       'Sample REST API in Spring Boot with persistence in PostgreSQL. A project to show layered architecture, tests, and API documentation.',
     tech: ['Java', 'Spring Boot', 'PostgreSQL', 'REST'],
     demo: '',
-    repo: 'https://github.com/kollekka',
+    repo: 'https://github.com/kollekka/GymTracker',
   },
   {
     title: 'TODO App (React + Node)',
@@ -52,7 +52,7 @@ export const projects = [
       'Simple CRUD app with React frontend and Node/Express or Java backend — depending on the version. Data stored in MongoDB.',
     tech: ['React', 'Node/Express', 'MongoDB'],
     demo: '',
-    repo: 'https://github.com/kollekka',
+    repo: 'https://github.com/kollekka/To-Do',
   },
 ]
 
