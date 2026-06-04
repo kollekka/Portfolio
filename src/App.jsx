@@ -130,7 +130,7 @@ function Projects() {
       <PlanetOrbs colors={orbColors} />
       <div className="container">
         <span className="section-label" data-reveal>Work</span>
-        <h2 data-reveal style={{ marginBottom: 12 }}>
+        <h2 data-reveal data-heading="Featured Projects" style={{ marginBottom: 12 }}>
           <GlitchText text="Featured Projects" fontSize={64} baseIntensity={0.12} hoverIntensity={0.45} />
         </h2>
         <p className="section-desc" data-reveal style={{ marginBottom: 40, maxWidth: 500 }}>Drag the top card down to browse through projects</p>
@@ -179,7 +179,7 @@ function Skills() {
       <PlanetOrbs colors={orbColors} />
       <div className="container">
         <div className="section-label" data-reveal>Expertise</div>
-        <h2 data-reveal style={{ marginBottom: 12 }}>
+        <h2 data-reveal data-heading="Skills & Technologies" style={{ marginBottom: 12 }}>
           <GlitchText text="Skills & Technologies" fontSize={64} baseIntensity={0.12} hoverIntensity={0.45} />
         </h2>
         {skills.map((group, gi) => (
@@ -226,7 +226,7 @@ function Experience() {
       <PlanetOrbs colors={orbColors} />
       <div className="container">
         <div className="section-label" data-reveal>Career</div>
-        <h2 data-reveal style={{ marginBottom: 12 }}>
+        <h2 data-reveal data-heading="Experience" style={{ marginBottom: 12 }}>
           <GlitchText text="Experience" fontSize={64} baseIntensity={0.12} hoverIntensity={0.45} />
         </h2>
         <div className="exp-clouds" ref={cloudRef}>
@@ -267,7 +267,7 @@ function Education() {
       <PlanetOrbs colors={orbColors} />
       <div className="container">
         <div className="section-label" data-reveal>Learning</div>
-        <h2 data-reveal style={{ marginBottom: 12 }}>
+        <h2 data-reveal data-heading="Education" style={{ marginBottom: 12 }}>
           <GlitchText text="Education" fontSize={64} baseIntensity={0.12} hoverIntensity={0.45} />
         </h2>
         <div className="edu-grid">
@@ -310,7 +310,7 @@ function Certificates() {
       <PlanetOrbs colors={orbColors} />
       <div className="container">
         <div className="section-label" data-reveal>Credentials</div>
-        <h2 data-reveal style={{ marginBottom: 12 }}>
+        <h2 data-reveal data-heading="Certificates" style={{ marginBottom: 12 }}>
           <GlitchText text="Certificates" fontSize={64} baseIntensity={0.12} hoverIntensity={0.45} />
         </h2>
         <div className="cgrid">
@@ -369,7 +369,7 @@ function Faq() {
       <PlanetOrbs colors={orbColors} />
       <div className="container">
         <div className="section-label" data-reveal>FAQ</div>
-        <h2 data-reveal style={{ marginBottom: 12 }}>
+        <h2 data-reveal data-heading="Frequently Asked Questions" style={{ marginBottom: 12 }}>
           <GlitchText text="Frequently Asked Questions" fontSize={64} baseIntensity={0.12} hoverIntensity={0.45} />
         </h2>
         <div className="faq-list">
