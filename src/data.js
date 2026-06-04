@@ -3,10 +3,10 @@ export const profile = {
   title: 'Computer Science Student',
   summary:
     'I work with SQL (PostgreSQL) and NoSQL (MongoDB). I enjoy designing simple solutions, writing clean code, and automating processes while actively developing my skills.',
-  focus: ['Java', 'JavaScript', 'Spring / Spring Boot', 'React', 'SQL', 'PostgreSQL', 'MongoDB', 'REST / API', 'English (B2+/C1)'],
+  focus: ['Java', 'Spring / Spring Boot', 'JavaScript', 'React', 'PHP', 'Laravel', 'Node/Express', 'SQL', 'PostgreSQL', 'MySQL', 'MongoDB', 'Python', 'English (C1 CAE)', 'Spanish (A2)'],
   about:
-    'I am a Computer Science student aiming to become a full‑stack developer. I build web apps from backend (Java, Spring) to frontend (React/JS). I design relational schemas in PostgreSQL, use MongoDB when it fits, and I actively develop my skills with a focus on testability, performance, and readable code.',
-  englishLevel: 'B2+/C1',
+    'I am a Computer Science and Econometrics student at the University of Rzeszów, specializing in Information Systems in Management, with a rector’s scholarship. I am aiming to become a full‑stack developer — I build web apps from backend (Java, Spring, PHP/Laravel) to frontend (React/JS). I design relational schemas in PostgreSQL and MySQL, use MongoDB when it fits, and I actively develop my skills with a focus on testability, performance, and readable code. I also have experience with Python (Odoo ERP modules) and basic R.',
+  englishLevel: 'C1 CAE',
 }
 
 export const links = {
@@ -16,8 +16,8 @@ export const links = {
 }
 
 export const skills = [
-  { category: 'Backend', items: ['Java 17+', 'Spring Boot', 'Spring Data', 'JPA/Hibernate', 'REST / API', 'Maven/Gradle', 'PHP', 'Laravel', 'Node/Express'] },
-  { category: 'Frontend', items: ['JavaScript (ESNext)', 'React', 'Vite', 'HTML5', 'CSS3'] },
+  { category: 'Backend', items: ['Java 17+', 'Spring Boot', 'PHP', 'Laravel', 'Node/Express', 'REST / API', 'Python'] },
+  { category: 'Frontend', items: ['JavaScript (ESNext)', 'React', 'HTML5', 'CSS3'] },
   { category: 'Databases', items: ['SQL', 'PostgreSQL', 'MySQL', 'MongoDB'] },
 ]
 
@@ -54,6 +54,14 @@ export const projects = [
     demo: '',
     repo: 'https://github.com/kollekka/To-Do',
   },
+  {
+    title: 'MedReminder – Android App',
+    description:
+      'Android app for planning medications and appointments with push reminders, daily dose overview, dark mode, and PL/EN language support. Uses Firebase for auth and cloud storage.',
+    tech: ['Kotlin', 'Jetpack Compose', 'Firebase', 'Material 3'],
+    demo: '',
+    repo: 'https://github.com/kollekka/MedReminder',
+  },
 ]
 
 export const certificates = [
@@ -69,11 +77,16 @@ export const certificates = [
     issuer: 'Udemy',
     image: 'UC-b9d3ab00-a525-4efd-bad2-8c03538bd13c.jpg',
   },
+  {
+    name: 'C1 Advanced (CAE) — Certificate in Advanced English',
+    issuer: 'Cambridge Assessment English',
+  },
 ]
 
 export const experience = [
-  { role: 'Student internship', company: 'GlobiHome', period: 'Aug 11, 2025 — Oct 5, 2025', details: 'Data quality analysis; Working with AI for data processing; Sourcing datasets for processing.' },
-  { role: 'Store redevelopment', company: 'MediaExpert', period: '2023' },
+  { role: 'Student internship — Data Analyst', company: 'GlobiHome', period: 'Aug 11, 2025 — Oct 5, 2025', details: 'Data quality analysis; Working with AI for data processing; Sourcing datasets for processing.' },
+  { role: 'ERP Implementer / Python Developer (internship)', company: 'Psilon', period: '2025', details: 'Writing Odoo ERP modules in Python; Preparing demo versions for clients; Writing technical documentation.' },
+  { role: 'Store redevelopment (internship)', company: 'MediaExpert', period: '2023' },
   { role: 'Technical school internship', company: 'Infomech Stalowa Wola', period: '2022', details: 'Assisted across tasks; worked with the Microsoft Office suite.' },
 ]
 
