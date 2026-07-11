@@ -84,10 +84,45 @@ export const certificates = [
 ]
 
 export const experience = [
-  { role: 'Student internship — Data Analyst', company: 'GlobiHome', period: 'Aug 11, 2025 — Oct 5, 2025', details: 'Data quality analysis; Working with AI for data processing; Sourcing datasets for processing.' },
-  { role: 'ERP Implementer / Python Developer (internship)', company: 'Psilon', period: '2025', details: 'Writing Odoo ERP modules in Python; Preparing demo versions for clients; Writing technical documentation.' },
-  { role: 'Store redevelopment (internship)', company: 'MediaExpert', period: '2023' },
-  { role: 'Technical school internship', company: 'Infomech Stalowa Wola', period: '2022', details: 'Assisted across tasks; worked with the Microsoft Office suite.' },
+  {
+    role: 'Student internship — Data Analyst',
+    company: 'GlobiHome',
+    period: 'Aug 11, 2025 — Oct 5, 2025',
+    details: 'Data quality analysis; Working with AI for data processing; Sourcing datasets for processing.',
+    description: 'At GlobiHome I focused on data quality analysis, ensuring the accuracy and consistency of large datasets used for business intelligence. I worked closely with AI tools to automate data processing pipelines and sourced relevant datasets from various internal systems to support analytical models.',
+    highlights: [
+      'Performed data quality audits on 10k+ records',
+      'Implemented automated data cleaning scripts in Python',
+      'Collaborated with the BI team on reporting dashboards',
+    ],
+    tech: ['Python', 'Pandas', 'Excel', 'SQL'],
+  },
+  {
+    role: 'ERP Implementer / Python Developer (internship)',
+    company: 'Psilon',
+    period: '2025',
+    details: 'Writing Odoo ERP modules in Python; Preparing demo versions for clients; Writing technical documentation.',
+    description: 'At Psilon I developed custom Odoo ERP modules tailored to client business requirements. I prepared demo environments for sales presentations and wrote technical documentation for both internal use and client handover. This role strengthened my Python skills and introduced me to enterprise software workflows.',
+    highlights: [
+      'Built 3 custom Odoo modules for inventory & CRM',
+      'Configured demo environments for client onboarding',
+      'Authored technical specifications and user guides',
+    ],
+    tech: ['Python', 'Odoo', 'PostgreSQL', 'XML', 'Linux'],
+  },
+  {
+    role: 'Technical school internship',
+    company: 'Infomech Stalowa Wola',
+    period: '2022',
+    details: 'Assisted across tasks; worked with the Microsoft Office suite.',
+    description: 'At Infomech I supported the IT team with a variety of administrative and technical tasks. I worked extensively with the Microsoft Office suite to prepare documentation, reports, and presentations. This internship provided foundational experience in a professional IT environment.',
+    highlights: [
+      'Prepared technical documentation and reports',
+      'Provided desktop support for office staff',
+      'Organised and maintained digital file archives',
+    ],
+    tech: ['Microsoft Office', 'Windows', 'IT Support'],
+  },
 ]
 
 export const education = [

@@ -1,14 +1,18 @@
 :root {
-  --bg: #08080c;
-  --surface: #101016;
-  --surface-hover: #181820;
+  --bg: #05060f;
+  --surface: #0a0c1a;
+  --surface-hover: #111327;
   --border: rgba(255, 255, 255, 0.06);
   --border-hover: rgba(255, 255, 255, 0.12);
   --text: #f0f0f0;
-  --text-secondary: rgba(255, 255, 255, 0.45);
-  --text-tertiary: rgba(255, 255, 255, 0.25);
+  --text-secondary: rgba(255, 255, 255, 0.55);
+  --text-tertiary: rgba(255, 255, 255, 0.30);
   --accent: #a78bfa;
-  --accent-dim: rgba(167, 139, 250, 0.15);
+  --accent-dim: rgba(167, 139, 250, 0.12);
+  --cyan: #22d3ee;
+  --cyan-dim: rgba(34, 211, 238, 0.12);
+  --fuchsia: #d946ef;
+  --fuchsia-dim: rgba(217, 70, 239, 0.12);
   --radius: 12px;
   --radius-sm: 8px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -51,9 +55,8 @@ a { color: var(--text); text-decoration: none; transition: color var(--ease); }
 a:hover { color: var(--accent); }
 
 .container { max-width: 1100px; margin: 0 auto; padding: 0 28px; position: relative; z-index: 1; }
-.section { padding: 100px 0; position: relative; z-index: 1; overflow: hidden; }
+.section { padding: 100px 0; position: relative; z-index: 1; }
 .section h2 { margin-bottom: 32px; }
-.section.alt { background: var(--surface); }
 
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
